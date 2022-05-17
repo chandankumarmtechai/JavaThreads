@@ -1,0 +1,40 @@
+Reentrant Lock methods
+__________________________________________________________________________________________________________
+int	getHoldCount()
+Queries the number of holds on this lock by the current thread.
+protected Thread	getOwner()
+Returns the thread that currently owns this lock, or null if not owned.
+protected Collection<Thread>	getQueuedThreads()
+Returns a collection containing threads that may be waiting to acquire this lock.
+int	getQueueLength()
+Returns an estimate of the number of threads waiting to acquire this lock.
+protected Collection<Thread>	getWaitingThreads(Condition condition)
+Returns a collection containing those threads that may be waiting on the given condition associated with this lock.
+int	getWaitQueueLength(Condition condition)
+Returns an estimate of the number of threads waiting on the given condition associated with this lock.
+boolean	hasQueuedThread(Thread thread)
+Queries whether the given thread is waiting to acquire this lock.
+boolean	hasQueuedThreads()
+Queries whether any threads are waiting to acquire this lock.
+boolean	hasWaiters(Condition condition)
+Queries whether any threads are waiting on the given condition associated with this lock.
+boolean	isFair()
+Returns true if this lock has fairness set true.
+boolean	isHeldByCurrentThread()
+Queries if this lock is held by the current thread.
+boolean	isLocked()
+Queries if this lock is held by any thread.
+void	lock()
+Acquires the lock.
+void	lockInterruptibly()
+Acquires the lock unless the current thread is interrupted.
+Condition	newCondition()
+Returns a Condition instance for use with this Lock instance.
+String	toString()
+Returns a string identifying this lock, as well as its lock state.
+boolean	tryLock()
+Acquires the lock only if it is not held by another thread at the time of invocation.
+boolean	tryLock(long timeout, TimeUnit unit)
+Acquires the lock if it is not held by another thread within the given waiting time and the current thread has not been interrupted.
+void	unlock()
+Attempts to release this lock.
