@@ -4,3 +4,4 @@
 4) Reentrant lock
 5) Synchronized with specific lock
 6) Nested lock
+7) Lock.trylock
