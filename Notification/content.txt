@@ -1,0 +1,8 @@
+1) wait and notify
+2) wait and notifyAll
+3) condition variable
+4) producer consumer 1P - 1C
+5) producer consumer NP - 1C
+6) producer consumer 1P - NC
+7) producer consumer NP - NC
+8) 1P - 1C using Lock
