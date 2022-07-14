@@ -1,2 +1,4 @@
 
 1) counter example
+2) modifying object
+3) ThreadLocal class
