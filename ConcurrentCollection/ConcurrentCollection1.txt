@@ -1,0 +1,11 @@
+ArrayBlockingQueue<E>
+A bounded blocking queue backed by an array. This queue orders elements FIFO (first-in-first-out). 
+The head of the queue is that element that has been on the queue the longest time. 
+The tail of the queue is that element that has been on the queue the shortest time. 
+New elements are inserted at the tail of the queue, and the queue retrieval operations obtain elements at the head of the queue.
+
+BlockingQueue implementations are designed to be used primarily for producer-consumer queues, 
+but additionally support the Collection interface.
+BlockingQueue implementations are thread-safe. 
+All queuing methods achieve their effects atomically using internal locks or other forms of concurrency control.
+Note that a BlockingQueue can safely be used with multiple producers and multiple consumers.
